@@ -7,8 +7,19 @@
   color: #335576;
 }
 
-.iceland-item {
+.destination-item__hawaii {
+  background-image: url(../assets/Images/hawaii.jpg);
+}
+
+.destination-item__iceland {
   background-image: url(../assets/Images/iceland.jpg);
+}
+
+.destination-item__greece {
+  background-image: url(../assets/Images/greece.jpg);
+}
+
+.destination-item {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,7 +29,7 @@
   padding-top: 50px;
   padding-bottom: 100px;
 }
-.iceland-item__header {
+.destination-item__header {
   color: white;
   font-size: 90px;
   position: relative;
@@ -26,7 +37,7 @@
   top: -80px;
   left: 90px;
 }
-.iceland-item__card {
+.destination-item__card {
   display: flex;
   justify-content: space-evenly;
   margin: 0 90px;
@@ -34,21 +45,21 @@
   top: -100px;
   text-align: center;
 }
-.iceland-item__days {
+.destination-item__days {
   background-color: white;
   border-radius: 10px;
   height: 300px;
-  width: 275px;
+  width: 250px;
   padding: 10px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.iceland-item__day {
+.destination-item__day {
   border-bottom: 3px solid black;
   position: relative;
   bottom: 35px;
 }
-.iceland-item__menu {
+.destination-item__menu {
   background-color: #FEFAF5;
   padding: 10px;
   position: relative;
@@ -96,4 +107,8 @@
   padding: 15px;
   height: 30px;
   width: 100%;
+}
+.footer-item__email {
+  text-decoration: none;
+  color: #335576;
 }/*# sourceMappingURL=destination.css.map */

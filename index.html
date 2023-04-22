@@ -15,9 +15,9 @@
 
       <ul class="nav-links">
         <li class="nav-item nav-item__active"><a href="#">Home</a></li>
-        <li class="nav-item"><a href="#">Hawaii</a></li>
-        <li class="nav-item"><a href="#">Iceland</a></li>
-        <li class="nav-item"><a href="#">Greece</a></li>
+        <li class="nav-item"><a href="pages/hawaii.html">Hawaii</a></li>
+        <li class="nav-item"><a href="pages/iceland.html">Iceland</a></li>
+        <li class="nav-item"><a href="pages/greece.html">Greece</a></li>
       </ul>
     </nav>
     <!-- Nav bar Start -->
@@ -34,7 +34,7 @@
           vacation with us now
         </p>
         <button class="travel-top__button">Get Started</button>
-        <img src="assets/Images/hero.png" alt="" class="travel-header" />
+        <img src="assets/Images/hero.png" alt="" class="travel-top__image" />
       </div>
     </article>
 
@@ -47,17 +47,21 @@
       <div class="hero-image__gallery">
         <!-- Hawaii -->
         <div class="hero-image">
-          <img
-            src="assets/Images/hawaii.jpg"
-            alt=""
-            class="hero-image__image"
-          />
-          <div class="hero-image__text">
-            <h1>Hawaii</h1>
-          </div>
+          <a href="pages/hawaii.html" class="hero-nav__link">
+            <img  
+              src="assets/Images/hawaii.jpg"
+              alt=""
+              class="hero-image__image"
+            />
+            <div class="hero-image__text">
+              <h1>Hawaii</h1>
+            </div>
+          </a>
         </div>
         <!-- Iceland -->
+
         <div class="hero-image">
+          <a href="pages/iceland.html" class="hero-nav__link">
           <img
             src="assets/Images/iceland.jpg"
             alt=""
@@ -66,10 +70,13 @@
           <div class="hero-image__text">
             <h1>Iceland</h1>
           </div>
+        </a>
         </div>
 
         <!-- Greece -->
         <div class="hero-image">
+          <a href="pages/greece.html" class="hero-nav__link">
+          
           <img
             src="assets/Images/greece.jpg"
             alt=""
@@ -78,6 +85,7 @@
           <div class="hero-image__text">
             <h1>Greece</h1>
           </div>
+        </a>
         </div>
       </div>
     </section>
@@ -90,7 +98,7 @@
       <div class="footer-item__primary">
         <h2 class="footer-item__header">Contact</h2>
         <p class="footer-item__middle">Email</p>
-        <p class="footer-item__bottom">info@travelsite.com</p>
+        <p class="footer-item__bottom"> <a href="mailto: info@travelsite.com" class="footer-item__email">info@travelsite.com</a></p>
       </div>
 
       <div class="footer-item__hour">
@@ -98,7 +106,8 @@
 
         <div class="footer-item__hour-item">
           <p class="footer-item__day">
-            Monday to Friday <br /> <span class="footer-item__hour">9:00 AM - 5:00 PM</span>
+            Monday to Friday <br />
+            <span class="footer-item__hour">9:00 AM - 5:00 PM</span>
           </p>
 
           <p class="footer-item__day">
@@ -106,14 +115,15 @@
             <span class="footer-item__hour">10:00 AM - 4:00 PM</span>
           </p>
 
-          
-
-          <p class="footer-item__day">Sunday<br> <span class="footer-item__hour">Closed</span></p>
+          <p class="footer-item__day">
+            Sunday<br />
+            <span class="footer-item__hour">Closed</span>
+          </p>
         </div>
       </div>
 
       <div class="footer-item__social">
-        <h2 class="footer-item__header">Social</h2>
+        <h2 class="footer-item__header">Socials</h2>
         <div class="footer-item__icon-gallery">
           <img
             src="assets/Icons/icon-instagram.png"
