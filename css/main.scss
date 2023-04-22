@@ -92,7 +92,10 @@ $primary-blue: #335576;
     width: 250px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgb(68, 66, 66);
+    transition: all 0.3;
+    transform: scale(1);
   }
+
 
   &__text {
     text-align: center;
@@ -109,6 +112,11 @@ $primary-blue: #335576;
     text-decoration: none;
   }
 
+}
+
+
+.hero-item:hover img{
+  transform: scale(1.1);
 }
 
 
