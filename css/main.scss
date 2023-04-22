@@ -1,3 +1,6 @@
+$primary-orange: #db7a4e;
+$primary-blue: #335576;
+
 .travel-top {
     margin-top: -1.25rem;
     width: 100%;
@@ -9,85 +12,102 @@
   
   .header__primary {
     color: #335576;
-    /* display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      align-items: center; */
+  
   }
   
   .travel-header {
     margin: 0;
     position: relative;
     top: 6.25rem;
-    left: 3.125rem;
+    left: 5.625rem;
   }
   
   .travel-top {
     color: #335576;
+
+    & h2 {
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 33px;
+
+    }
+
+    & p {
+        font-weight: lighter;
+    }
+
+    &__button {
+        position: relative;
+        top: -250px;
+        background-color: #db7a4e;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        padding: 10px 40px;
+        position: relative;
+        left: 5.625rem;
+          
+      }
+
+      & img {
+        height: 25rem;
+        position: relative;
+        top: -125px;
+        left: 35.3125rem;
+      }
   }
   
-  .travel-top h2 {
-    justify-content: center;
-    margin-bottom: 20px;
-    font-size: 33px;
-  }
+
   
-  .travel-top p {
-    font-weight: lighter;
-  }
+
   
-  .travel-header__button {
-    position: fixed;
-    top: -250px;
-    background-color: #db7a4e;
-    color: white;
-    border: none;
-    border-radius: 15px;
-  
-    padding: 10px 40px;
-  }
-  
-  .travel-top img {
-    height: 25rem;
-    position: relative;
-    top: -125px;
-    left: 750px;
-  }
+
   
   .nav-item__active {
-    border-bottom: 3px solid #db7a4e;
+    border-bottom: 3px solid $primary-orange;
   }
   
-  .hero-item__top {
+
+//   Hero
+
+  
+.hero-item {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 75px;
+  
+  &__top {
     color: #335576;
     position: relative;
     top: 1.875rem;
     left: 3.125rem;
   }
   
-  .hero-image__gallery {
+}
+
+
+.hero-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+&__gallery {
     display: flex;
     justify-content: space-between;
     margin: 0 12.5rem;
     position: relative;
     top: 3.125rem;
   }
-  
-  .hero-image {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  .hero-image__image {
+
+&__image {
     height: 350px;
     width: 250px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgb(68, 66, 66);
-  }
-  
-  .hero-text {
+}
+
+&__text {
     text-align: center;
     position: relative;
   
@@ -95,13 +115,11 @@
     left: 70px;
   
     color: white;
-  }
-  
-  .hero-item {
-    background-color: white;
-    padding-top: 20px;
-    padding-bottom: 75px;
-  }
+}
+
+}
+
+
   
   /* Footer */
   
@@ -112,42 +130,74 @@
     padding: 20px 150px;
   
     padding-bottom: 50px;
-    
-  }
-  
-  .footer-item__header {
-    color: #335576;
-  }
-  
-  /* Spacing below h3 */
-  .footer-item__header {
-    padding-bottom: 15px;
-  }
-  
-  .footer-item__hour-item {
-    display: flex;
-  }
-  
-  .social-icons {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  .footer-item__icon {
-    padding: 15px;
-    height: 30px;
-    width: 100%;
-  }
-  
-  .footer-item__day {
+
+    &__header {
+        color: $primary-blue;
+        padding-bottom: 15px;
+    }
+ 
+    &__middle {
+        color: $primary-orange;
+    }
+
+    &__bottom {
+        color: $primary-blue;
+    }
+
+    &__hour-item {
+        display: flex;
+
+    }
+
+    &__day {
+        margin: 20px;
     position: relative;
+    
     bottom: .9375rem;
     color: #db7a4e;
-  }
+    
+    }
+
+    &__day span {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 15px;
+        color: $primary-blue;
+    }
+
+
+    &__icon-gallery {
+        display: flex;
+        //     justify-content: space-evenly;
+    }
+
+    &__icon {
+        padding: 15px;
+        height: 30px;
+        width: 100%;
+    }
+   
+
+    
+ 
+}
+
   
+
+
   
-  .footer-item__day span {
-    position: relative;
-    top: 15px;
-    color: #335576;
-  }
+// @media (min-width: 1900px) {
+    
+//     .travel-top img {
+//         height: 25rem;
+//         position: relative;
+//         top: -125px;
+//         left: 59.375rem;
+//       }
+//   }
+
+  
+
+  
+
