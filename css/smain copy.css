@@ -43,6 +43,7 @@
   color: white;
   border: none;
   border-radius: 15px;
+
   padding: 10px 40px;
 }
 
@@ -89,8 +90,10 @@
 .hero-text {
   text-align: center;
   position: relative;
+
   top: -60px;
   left: 70px;
+
   color: white;
 }
 
@@ -101,12 +104,15 @@
 }
 
 /* Footer */
+
 .footer-item {
   background-color: #fefaf5;
   display: flex;
   justify-content: space-around;
   padding: 20px 150px;
+
   padding-bottom: 50px;
+  
 }
 
 .footer-item__header {
@@ -135,12 +141,13 @@
 
 .footer-item__day {
   position: relative;
-  bottom: 0.9375rem;
+  bottom: .9375rem;
   color: #db7a4e;
 }
+
 
 .footer-item__day span {
   position: relative;
   top: 15px;
   color: #335576;
-}/*# sourceMappingURL=main.css.map */
+}
