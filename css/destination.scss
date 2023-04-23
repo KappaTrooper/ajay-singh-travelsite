@@ -164,11 +164,129 @@ $primary-blue: #335576;
 }
 
   
-@media only screen
+
+
+@media only screen and (min-width: 350px) and (max-width: 760px) {
+    html,
+    body {
+      max-width: 90vh;
+      
+    }
+    nav {
+      padding-left: 25px;
+      width: 90vh;
+    }
+    
+    .destination-item {
+        width: 100vh;
+
+       
+
+     &__card {
+            display: flex;
+            flex-direction: column;
+            margin: 0 270px;
+            position: relative;
+            top: -100px;
+            text-align: center;
+            gap: .625rem;
+        }
+
+        &__days {
+            background-color: white;
+            border-radius: 20px;
+            height: 275px;
+            width: 350px;
+            padding: 10px;
+            padding-top: 40px;
+            padding-bottom: 50px;
+        }
+    
+        &__day {
+            border-bottom: 3px solid black;
+            position: relative;
+            bottom: 35px;
+            
+        }
+    
+        &__menu {
+            background-color: #FEFAF5;
+            padding: 10px;
+            position: relative;
+            bottom: 25px;
+            
+        }
+    }
+
+    .destination-item__iceland {
+        height: 1210px;
+        
+    }
+
+    .destination-item__hawaii {
+        height: 1210px;
+    }
+
+    .destination-item__greece {
+        height: 1210px;
+    }
+
+
+
+
+
+
+
+    .footer-item {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      margin: 0 -80px;
+      gap: 40px;
+    }
+  }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    html,
+    body {
+      max-width: auto;
+    }
+  
+    // tablet nav bar start
+  
+    nav {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  .destination-item {
+
+    
+    
+  }
+   
+   
+  
+   
+    .footer-item {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        font-size: 15px;
+        margin: 0 0px;
+        margin-left: -40px;
+        gap: 40px;
+      }
+  }
+
+
+  @media only screen
 and (min-width : 768px)
 and (max-width : 1024px)
 and (orientation : portrait) {
 
+    body {
+        max-width: auto;
+    }
 
     .destination-item__card {
         display: flex;
