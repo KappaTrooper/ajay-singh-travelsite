@@ -1,9 +1,14 @@
+@mixin transition {
+  transition: all 0.3;
+  transform: scale(1);
+}
+
 $primary-orange: #db7a4e;
 $primary-blue: #335576;
 
 .travel-top {
-  margin-top: -1.25rem;
-  width: 100%;
+  margin-top: 1.25rem;
+  width: 100vh;
   height: 28.125rem;
   background-color: #fefaf5;
   background-repeat: no-repeat;
@@ -68,6 +73,7 @@ $primary-blue: #335576;
   &__top {
     color: #335576;
     position: relative;
+    padding-left: 40px;
     top: 1.875rem;
     left: 3.125rem;
   }
@@ -92,10 +98,7 @@ $primary-blue: #335576;
     width: 250px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgb(68, 66, 66);
-    transition: all 0.3;
-    transform: scale(1);
   }
-
 
   &__text {
     text-align: center;
@@ -105,21 +108,20 @@ $primary-blue: #335576;
     left: 70px;
 
     color: white;
-    
   }
 
   & a {
     text-decoration: none;
   }
-
 }
 
+.hero-image__image-hawaii, { @include transition();}
+.hero-image__image-iceland { @include transition();}
+.hero-image__image-greece {@include transition();}
 
-.hero-item:hover img{
-  transform: scale(1.1);
-}
-
-
+.hero-image__image-hawaii:hover{transform: scale(1.1);}
+.hero-image__image-iceland:hover {transform: scale(1.1);}
+.hero-image__image-greece:hover {transform: scale(1.1);}
 
 /* Footer */
 
@@ -182,58 +184,101 @@ $primary-blue: #335576;
   }
 }
 
-@media (max-width: 390px) {
-//  navbar
+// Mobile
 
-nav {
-  background-color: white;
-  width: 200%;
-  color: #335576;
-
-}
-.travel-top {
-  margin-top: -1.25rem;
-  width: 200%;
-  height: 28.125rem;
-  background-color: #fefaf5;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  text-align: center;
-  
-
-&__image {
-  position: relative;
-  right: 50px;
-
+@media (max-width: 450px) {
+  //  navbar
 }
 
+// Mobile Design
 
-&__button {
-  color: blue;
-  position: absolute;
-  top: 350px;
-
+@media only screen and (min-width: 350px) and (max-width: 450px) {
 }
 
+// Tablet Design
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  html,
+  body {
+    max-width: 100%;
+  }
 
-}
+  // tablet nav bar start
 
+  nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
-}
+  // tablet nav bar end
 
-@media (max-width: 1279px) {
+  // tablet header
+
+  .travel-top {
+    font-size: 15px;
+    text-align: left;
+
+    & h2 {
+      justify-content: left;
+      margin-bottom: 30px;
+      margin-top: -50px;
+
+      font-size: 25px;
+    }
+
+    &__button {
+      position: relative;
+      margin-top: 400px;
+      left: 5.625rem;
+    }
+
+    &__image {
+      height: 300px;
+      margin-left: -275px;
+      margin-bottom: 100px;
+    }
+  }
+
+  .travel-header__paragraph {
+    width: 350px;
+    font-size: 15px;
+  }
+
   .hero-image__gallery {
     display: flex;
     justify-content: space-between;
-    margin: 2 20.5rem;
-    position: relative;
-    top: 3.125rem;
+    margin: 0 20px;
+  }
+  //tablet footer
+
+  .footer-item {
   }
 
-  
-
-
-
-
+  .footer-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -150px;
+  }
 }
+
+// // Desktop Design
+
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+  .travel-top {
+    &__button {
+      position: relative;
+      left: 5.625rem;
+      top: -225px;
+    }
+
+    &__image {
+      position: relative;
+      height: 25rem;
+      top: -125px;
+      left: 650px;
+    }
+  }
+}
+// }

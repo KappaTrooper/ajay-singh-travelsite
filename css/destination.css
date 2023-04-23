@@ -111,4 +111,32 @@
 .footer-item__email {
   text-decoration: none;
   color: #335576;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .destination-item__card {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 90px;
+    position: relative;
+    top: -100px;
+    text-align: center;
+    gap: 35px;
+  }
+  .destination-item__days {
+    background-color: white;
+    border-radius: 10px;
+    height: 18.75rem;
+    width: 15.625rem;
+    padding: 0.625rem;
+    padding-top: 1.875rem;
+    padding-bottom: 0.625rem;
+  }
+  .footer-item {
+    background-color: #fefaf5;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 3.125rem;
+  }
 }/*# sourceMappingURL=destination.css.map */

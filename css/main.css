@@ -1,6 +1,6 @@
 .travel-top {
-  margin-top: -1.25rem;
-  width: 100%;
+  margin-top: 1.25rem;
+  width: 100vh;
   height: 28.125rem;
   background-color: #fefaf5;
   background-repeat: no-repeat;
@@ -23,21 +23,20 @@
 }
 .travel-top h2 {
   justify-content: center;
-  margin-bottom: 20px;
-  font-size: 33px;
+  margin-bottom: 1.25rem;
+  font-size: 2.0625rem;
 }
 .travel-top p {
   font-weight: lighter;
 }
 .travel-top__button {
   position: relative;
-  top: -250px;
+  top: -15.625rem;
   background-color: #db7a4e;
   color: white;
   border: none;
-  border-radius: 15px;
-  padding: 10px 40px;
-  position: relative;
+  border-radius: .9375rem;
+  padding: .875rem 2.8125rem;
   left: 5.625rem;
 }
 .travel-top__image {
@@ -48,17 +47,18 @@
 }
 
 .nav-item__active {
-  border-bottom: 3px solid #db7a4e;
+  border-bottom: .1875rem solid #db7a4e;
 }
 
 .hero-item {
   background-color: white;
-  padding-top: 20px;
-  padding-bottom: 75px;
+  padding-top: 1.25rem;
+  padding-bottom: 4.6875rem;
 }
 .hero-item__top {
   color: #335576;
   position: relative;
+  padding-left: 2.5rem;
   top: 1.875rem;
   left: 3.125rem;
 }
@@ -77,25 +77,46 @@
   top: 3.125rem;
 }
 .hero-image__image {
-  height: 350px;
-  width: 250px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px rgb(68, 66, 66);
-  transition: all 0.3;
-  transform: scale(1);
+  height: 21.875rem;
+  width: 15.625rem;
+  border-radius: .3125rem;
+  box-shadow: .3125rem .3125rem .3125rem rgb(68, 66, 66);
 }
 .hero-image__text {
   text-align: center;
   position: relative;
-  top: -60px;
-  left: 70px;
+  top: -3.75rem;
+  left: 4.375rem;
   color: white;
 }
 .hero-image a {
   text-decoration: none;
 }
 
-.hero-item:hover img {
+.hero-image__image-hawaii {
+  transition: all 0.3;
+  transform: scale(1);
+}
+
+.hero-image__image-iceland {
+  transition: all 0.3;
+  transform: scale(1);
+}
+
+.hero-image__image-greece {
+  transition: all 0.3;
+  transform: scale(1);
+}
+
+.hero-image__image-hawaii:hover {
+  transform: scale(1.1);
+}
+
+.hero-image__image-iceland:hover {
+  transform: scale(1.1);
+}
+
+.hero-image__image-greece:hover {
   transform: scale(1.1);
 }
 
@@ -104,13 +125,14 @@
   background-color: #fefaf5;
   display: flex;
   justify-content: space-around;
-  padding: 20px 190px;
-  padding-bottom: 50px;
+  padding: 1.25rem 11.875rem;
+  padding-bottom: 3.125rem;
 }
 .footer-item__header {
   color: #335576;
   padding-bottom: 15px;
   position: relative;
+
 }
 .footer-item__middle {
   color: #db7a4e;
@@ -148,37 +170,62 @@
   color: #335576;
 }
 
-@media (max-width: 390px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  html,
+  body {
+    max-width: 100%;
+  }
   nav {
-    background-color: white;
-    width: 200%;
-    color: #335576;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .travel-top {
-    margin-top: -1.25rem;
-    width: 200%;
-    height: 28.125rem;
-    background-color: #fefaf5;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    text-align: center;
+    font-size: 15px;
+    text-align: left;
   }
-  .travel-top__image {
-    position: relative;
-    right: 50px;
+  .travel-top h2 {
+    justify-content: left;
+    margin-bottom: 30px;
+    margin-top: -50px;
+    font-size: 25px;
   }
   .travel-top__button {
-    color: blue;
-    position: absolute;
-    top: 350px;
+    position: relative;
+    margin-top: 400px;
+    left: 5.625rem;
   }
-}
-@media (max-width: 1279px) {
+  .travel-top__image {
+    height: 300px;
+    margin-left: -275px;
+    margin-bottom: 100px;
+  }
+  .travel-header__paragraph {
+    width: 350px;
+    font-size: 15px;
+  }
   .hero-image__gallery {
     display: flex;
     justify-content: space-between;
-    margin: 2 20.5rem;
+    margin: 0 20px;
+  }
+  .footer-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -150px;
+  }
+}
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+  .travel-top__button {
     position: relative;
-    top: 3.125rem;
+    left: 5.625rem;
+    top: -225px;
+  }
+  .travel-top__image {
+    position: relative;
+    height: 25rem;
+    top: -125px;
+    left: 650px;
   }
 }/*# sourceMappingURL=main.css.map */
