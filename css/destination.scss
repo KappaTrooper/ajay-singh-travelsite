@@ -75,13 +75,25 @@ $primary-blue: #335576;
         padding: 10px;
         padding-top: 30px;
         padding-bottom: 30px;
+
+          box-shadow: 0px 4px 4px black ;
+        
+
+
+        // The box shadow of the cards must be:
+        // Horizontal Offset: 0px
+        // Vertical Offset: 4px
+        // Blur: 4px
+        // Color: Black, with an opacity of 20%
     }
+
 
     &__day {
         border-bottom: 3px solid black;
         position: relative;
         bottom: 35px;
-        
+      
+
     }
 
     &__menu {
@@ -163,8 +175,59 @@ $primary-blue: #335576;
  
 }
 
+
+
+//   Form-Start
+
+.form-item__header {
+    text-align: center;
+    color: $primary-blue;
+}
+
+.form-item__container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #FEFAF5;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: $primary-blue;
+    color: #FEFAF5;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: $primary-orange;
+  }
   
 
+
+
+  
+
+
+
+
+
+
+  
+/* ------------------------------------------------------------------MOBILE--------------------------------- */
 
 @media only screen and (min-width: 350px) and (max-width: 760px) {
     html,
@@ -246,6 +309,8 @@ $primary-blue: #335576;
     }
   }
 
+
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     html,
     body {
@@ -258,12 +323,9 @@ $primary-blue: #335576;
       padding-left: 1rem;
       padding-right: 1rem;
     }
-  .destination-item {
+  
 
-    
-    
-  }
-   
+
    
   
    
