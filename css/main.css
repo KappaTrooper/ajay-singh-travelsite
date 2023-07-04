@@ -15,7 +15,7 @@
   margin: 0;
   position: relative;
   top: 6.25rem;
-  left: 5.625rem;
+  left: 20.625rem;
 }
 
 .travel-top {
@@ -31,20 +31,20 @@
 }
 .travel-top__button {
   position: relative;
-  top: -250px;
+  top: -190px;
   background-color: #db7a4e;
   color: white;
   border: none;
   border-radius: 15px;
   padding: 10px 40px;
   position: relative;
-  left: 5.625rem;
+  left: 20.625rem;
 }
 .travel-top__image {
   position: relative;
   height: 25rem;
   top: -125px;
-  left: 35.3125rem;
+  left: 90rem;
 }
 
 .nav-item__active {
@@ -61,7 +61,7 @@
   position: relative;
   padding-left: 40px;
   top: 1.875rem;
-  left: 3.125rem;
+  left: 28rem;
 }
 
 .hero-image {
@@ -72,7 +72,7 @@
 }
 .hero-image__gallery {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 0 13.5rem;
   position: relative;
   top: 3.125rem;
@@ -87,7 +87,7 @@
   text-align: center;
   position: relative;
   top: -60px;
-  left: 70px;
+  left: 50px;
   color: white;
 }
 .hero-image a {
@@ -277,11 +277,11 @@
     margin: 0 -150px;
   }
 }
-@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+@media only screen and (max-width: 600px) {
   .travel-top__button {
-    position: relative;
-    left: 5.625rem;
-    top: -225px;
+
+  
+    display: none;
   }
   .travel-top__image {
     position: relative;
